@@ -5,7 +5,7 @@ from termcolor import colored
 import getSessionCookie
 
 def main(session):
-    f = open("../data/userlist.txt", "r")
+    f = open("data/userlist.txt", "r")
     lines = f.readlines()
     users = []
     passwords = []
@@ -16,7 +16,7 @@ def main(session):
         passwords.append(line[1])
     f.close()
     
-    bearersFile = open("../data/bearers.txt", "r")
+    bearersFile = open("data/bearers.txt", "r")
     lines = bearersFile.readlines()
     bearers = []
     secsInHour = 3600
